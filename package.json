@@ -1,0 +1,33 @@
+{
+  "name": "twag",
+  "version": "1.0.0",
+  "description": "HTML tags in Twig",
+  "main": "_build/build.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node _build/build.js",
+    "serve": "nodemon --watch ./ --watch ./views -e js,twig server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jpdevries/twag.git"
+  },
+  "keywords": [
+    "Twig",
+    "HTML"
+  ],
+  "author": "JP de Vries",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jpdevries/twag/issues"
+  },
+  "homepage": "https://github.com/jpdevries/twag#readme",
+  "devDependencies": {
+    "fs": "0.0.1-security",
+    "nodemon": "^1.10.2"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "twig": "^0.9.5"
+  }
+}
