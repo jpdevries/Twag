@@ -7,10 +7,10 @@ Twag is a collection of Twig imports each of which represent an HTML element and
 ## Usage
 Twag templates work the same as any other Twig template. Include the Twag template for the tag you'd like to use and pass in any optional&nbsp;attributes.
 ```twig
-{{ include 'twag/img.twig' with {
+{% include 'twag/img.twig' with {
   'alt': 'A picture of a cat',
   'src': 'cat.jpg'
-  } only }}
+  } only %}
 ```
 
 Tags that represent non&ndash;void elements can be included with the [Twig embed syntax](http://twig.sensiolabs.org/doc/tags/embed.html) and accept an `innerHTML`&nbsp;block.
