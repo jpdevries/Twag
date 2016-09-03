@@ -1,1 +1,1 @@
-<bgsound{% if balance %} balance="{{balance}}"{% endif %}{% if loop %} loop="{{loop}}"{% endif %}{% if src %} src="{{src}}"{% endif %}{% if volume %} volume="{{volume}}"{% endif %}>
+<bgsound{% if balance %} balance="{{balance}}"{% endif %}{% if loop %} loop="{{loop}}"{% endif %}{% if src %} src="{{src}}"{% endif %}{% if volume %} volume="{{volume}}"{% endif %}{% if {{misc}} %}{% for slug, attr in misc %} {{slug}}="{{attr}}"{% endfor %}{% endif %}>

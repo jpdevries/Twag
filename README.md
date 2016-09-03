@@ -25,6 +25,19 @@ Tags that represent non&ndash;void elements can be included with the [Twig embed
 {% endembed %}
 ```
 
+What about miscellaneous attributes like `ARIA` and `data-attributes`? Pass a [Key Value](https://mijingo.com/blog/key-value-arrays-in-twig) array as a `misc` property to append those attributes as&nbsp;well.
+
+```twig
+{% include 'twag/img.twig' with {
+  'alt': 'A picture of a cat',
+  'src': 'cat.jpg',
+  'misc': {
+    'aria-hidden': 'false',
+    'data-meow': 'true'
+  }
+} only %}
+```
+
 ## Contributing
 Contributions are welcome. In the `_build` folder you'll find a `build.js` script and an accompanying `attributes` directory. There is a JSON file representing each HTML tag in the `attributes` folder that contains the attributes available for that&nbsp;tag.
 

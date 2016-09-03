@@ -57,7 +57,7 @@ const tags = [
   "decorator",
   "del",
   "details",
-  "détails",
+  //"détails",
   "dfn",
   "dialog",
   "dir",
@@ -156,7 +156,9 @@ tags.map(function(tag) {
     return `{% if ${attribute} %} ${attribute}="{{${attribute}}}"{% endif %}`;
   });
 
-  let s = `<${tag}${attributes.join('')}>`;
+  const misc = `{% if {{misc}} %}{% for slug, attr in misc %} {{slug}}="{{attr}}"{% endfor %}{% endif %}`;
+
+  let s = `<${tag}${attributes.join('')}${misc}>`;
   if(!isVoidElement) s += `
   {% block innerHTML %}{% endblock %}
 </${tag}>`;
