@@ -156,7 +156,7 @@ tags.map(function(tag) {
     return `{% if ${attribute} %} ${attribute}="{{${attribute}}}"{% endif %}`;
   });
 
-  const misc = `{% if {{misc}} %}{% for slug, attr in misc %} {{slug}}="{{attr}}"{% endfor %}{% endif %}`;
+  const misc = `{% if {{misc}} %}{% for slug, attr in misc %} {{slug}}{% if attr %}="{{attr}}"{% endif %}{% endfor %}{% endif %}`;
 
   let s = `<${tag}${attributes.join('')}${misc}>`;
   if(!isVoidElement) s += `
