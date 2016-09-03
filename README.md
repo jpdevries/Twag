@@ -38,6 +38,9 @@ What about miscellaneous attributes like `ARIA` and `data-attributes`? Pass a [K
 } only %}
 ```
 
+## To Do
+[Package with Composer?](https://github.com/jpdevries/Twag/issues/1)
+
 ## Contributing
 Contributions are welcome. In the `_build` folder you'll find a `build.js` script and an accompanying `attributes` directory. There is a JSON file representing each HTML tag in the `attributes` folder that contains the attributes available for that&nbsp;tag.
 
