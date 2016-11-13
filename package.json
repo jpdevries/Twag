@@ -1,6 +1,6 @@
 {
   "name": "twag",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "HTML tags in Twig",
   "main": "_build/build.js",
   "scripts": {
